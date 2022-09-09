@@ -62,7 +62,6 @@ h4{
     font-weight: 700;
     min-width: 175px;
     display: inline-flex;
-
     align-items: center;
     justify-content: center;;
     text-transform: uppercase;
@@ -101,5 +100,4 @@ button:not(:disabled):not(.disabled){
     line-height: 1.5;
     padding-top: 1.25rem;;
     padding-bottom: 1.875rem;
-
 }
