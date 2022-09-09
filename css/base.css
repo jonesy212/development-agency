@@ -23,7 +23,7 @@ body{
 }
 
 a{
-    color: #495fef;
+    color: var(--primary-color);
     text-decoration: none;
     background-color: transparent;
 }
@@ -61,8 +61,8 @@ h4{
 .btn{
     font-weight: 700;
     min-width: 175px;
-    display: inline-block;
-    display: flex;
+    display: inline-flex;
+
     align-items: center;
     justify-content: center;;
     text-transform: uppercase;
@@ -82,10 +82,24 @@ button:not(:disabled):not(.disabled){
 .btn-primary,
 .btn-primary a{
     color: #fff;
-    background-color: var(#495fef);
-    border-color: var(#495fef);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .round-pill {
     border-radius: 50rem
+}
+
+.header-lg{
+    font-size: 5rem;
+    letter-spacing: -2.5px;
+    line-height: 1.2;
+}
+
+.sub-header {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 1.25rem;;
+    padding-bottom: 1.875rem;
+
 }
