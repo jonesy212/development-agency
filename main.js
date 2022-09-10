@@ -7,7 +7,13 @@ const light = 'light';
 const open = 'open';
 const active = 'active';
 
+//create more data attributes to select 
+const modalOpen = '[data-open]';
+const modalClose = '[data-close]';
+const isVisible = 'is-visible'
 
+const dataFilter = '[data-filter]'
+const portfolioData = '[data-card]'
 //store selector
 const root = document.documentElement;
 
@@ -16,10 +22,9 @@ const toggleTheme = document.querySelector(themeTab);
 const switcher = document.querySelectorAll(switcherBtn);
 const currentTheme = localStorage.getItem(theme);
 
-//create more data attributes to select 
-const modalOpen = '[data-open]';
-const modalClose = '[data-close]';
-const isVisible = 'is-visible'
+/* Portfolio */
+const filterLinks = document.querySelectorAll(dataFilter);
+const portfolioCards = document.querySelectorAll(portfolioData)
 
 // Modal
 //find every button to query everything
@@ -81,7 +86,28 @@ for (const elm of switcher) {
         setActive(elm, switcherBtn)
         setTheme(toggle)
     }
-)}
+    )
+}
+
+for (const link of filterLinks) {
+    link.addEventListener('click', function () {
+        //check for class and then open
+        // const toggle = this.dataset.toggle;
+        setActive(link, '.filter-link')
+        const filter = this.dataset.filter;
+        console.log(this.dataset.filter)
+        portfolioCards.forEach(card => {
+            if (filter === 'all') {
+                card.style.display = 'block'
+            }else if (card.dataset.card === filter){
+                card.style.display = 'block'
+            } else {
+                card.style.display = 'none'
+            }
+        })
+    })
+}
+
 
 
 //Full Site Modal "open buttons"
