@@ -26,14 +26,15 @@ const isVisible = 'is-visible'
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
-
+const setActive = (elm, selector) => {
+    if (document.querySelector(`${selector}.${active}`) !== null) {
+        document.querySelector(`${selector}.${active}`).classList.remove(active);
+    }
+        elm.classList.add(active);
+}
 //create open class
 //change the chevron direction based on open and close
 
-toggleTheme.addEventListener('clcck', function () {
-    const tab = this.parentelement.parentElement;
-    
-})
 toggleTheme.addEventListener('click', function() {
     const tab = this.parentElement.parentElement;
     //check for class and then open
@@ -42,20 +43,26 @@ toggleTheme.addEventListener('click', function() {
     }
     if (!tab.className.includes(open)) {
         tab.classList.add(open)
-    } else
-    {
+    } else {
         tab.classList.remove(open)
     }
  
 });
 
+for (const elm of switcher) {
+    elm.addEventListener('click', function () {
+        //check for class and then open
+        const toggle = this.dataset.toggle;
+        setActive(elm, switcherBtn)
+        
+    }
+)}
+
 
 //Full Site Modal "open buttons"
 for (const elm of openModal) {
     elm.addEventListener('click', function() {
-        if ('click') {
-            console.log('opening')
-        }
+
         const modalId = this.dataset.open;
         document.getElementById(modalId).classList.add(isVisible);
     })
