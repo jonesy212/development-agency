@@ -67,16 +67,13 @@
 .left{
     border-right: 1px solid var(--color-text-base);
 }
-.left:hover {
-    color: black;
-    background-color: var(--color-background-hover);
-}
+.left:hover,
 .right:hover {
-    color: white;
-    background-color: var(--color-text);
+    color: var(--white);
+    background-color: var(--color-text-base);
 }
 .active{
-    background-color: var(--color-text );
+    background-color: var(--color-text-base);
     color: var(--white)
 }
 .theme-tab{
@@ -94,7 +91,6 @@
     border-bottom-left-radius: .4rem;
     border-top-left-radius: .4rem;
     left: 1px;
-
 
 }
 .navbar{
@@ -191,5 +187,7 @@
 [data-animation="zoomInOut"].full-screen-modal.is-visible{
     transform: none;
 }
+
+
 
 
