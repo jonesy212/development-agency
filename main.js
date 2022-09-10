@@ -32,6 +32,16 @@ const setActive = (elm, selector) => {
     }
         elm.classList.add(active);
 }
+
+const setTheme = (val) => {
+    if (val === dark) {
+        root.setAttribute(dataTheme, dark);
+        localStorage.setItem(theme, dark)
+    } else {
+        root.setAttribute(dataTheme, light);
+        localStorage.setItem(theme, light);
+    }
+}
 //create open class
 //change the chevron direction based on open and close
 
@@ -54,7 +64,7 @@ for (const elm of switcher) {
         //check for class and then open
         const toggle = this.dataset.toggle;
         setActive(elm, switcherBtn)
-        
+        setTheme(toggle)
     }
 )}
 
