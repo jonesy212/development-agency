@@ -41,7 +41,22 @@ const setTheme = (val) => {
         root.setAttribute(dataTheme, light);
         localStorage.setItem(theme, light);
     }
+};
+
+
+if (currentTheme) {
+    root.setAttribute(dataTheme, currentTheme);
+    switcher.forEach((btn) => {
+        btn.classList.remove(active);
+    })
+
+    if (currentTheme == dark) {
+        switcher[1].classList.add(active);
+    } else {
+        switcher[0].classList.add(active);
+    }
 }
+
 //create open class
 //change the chevron direction based on open and close
 
