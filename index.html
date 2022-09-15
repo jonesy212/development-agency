@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="./css/pages.css" />
     <title>Document</title>
 
-    <script defer src="./main.js"></script>
+    <script defer src="./../portfolio/js/main.js"></script>
+    <script defer src="./../portfolio/js/carousel.js"></script>
   </head>
   <body>
 		<div class="theme-panel open">
@@ -82,153 +83,348 @@
           </ul>
         </div>
         <div class="portfolio-grid">
-
-          <div class="portfolio-card" data-card="app">
+        <!-- data-open used to connect  -->
+          <div class="portfolio-card" data-card="web" data-open="web-1">
             <div class="card-body">
               <img src="./assets/images/portfolio-1.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
+              <div class="card-popup-box">
                 <div>All Work</div>
                 <h3>Projects</h3>
-              </a>
+              </div>
 
             </div>
           </div>
-          <div class="portfolio-card" data-card="app">
+          <div class="portfolio-card" data-card="web" data-open="web-2">
             <div class="card-body">
               <img src="./assets/images/portfolio-2.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
-                <div>App Development</div>
-                <h3>Food Website</h3>
-              </a>
-
-            </div>
-          </div>
-          <div class="portfolio-card" data-card="web">
-            <div class="card-body">
-              <img src="./assets/images/portfolio-3.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
+              <div class="card-popup-box">
                 <div>Web Development</div>
                 <h3>Food Website</h3>
-              </a>
+              </div>
 
             </div>
           </div>
-          <div class="portfolio-card" data-card="ui">
+          <div class="portfolio-card" data-card="web" data-open="web-3">
             <div class="card-body">
-              <img src="./assets/images/portfolio-4.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
-                <div>UI Design</div>
-                <h3>The Experience</h3>
-              </a>
+              <img src="./assets/images/portfolio-3.jpg" alt="portfolio icon">
+              <div class="card-popup-box">
+                <div>Web Development</div>
+                <h3>Food Website</h3>
+              </div>
 
             </div>
           </div>
-          <div class="portfolio-card" data-card="web">
+          <div class="portfolio-card" data-card="app" data-open="app-1">
             <div class="card-body">
-              <img src="./assets/images/portfolio-5.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
-                <div>UI Design</div>
+              <img src="./assets/images/portfolio-3.jpg" alt="portfolio icon">
+              <div class="card-popup-box">
+                <div>App Development</div>
                 <h3>The Experience</h3>
-              </a>
+              </div>
 
             </div>
           </div>
-          <div class="portfolio-card" data-card="web">
+          <div class="portfolio-card" data-card="app" data-open="app-2">
+            <div class="card-body">
+              <img class="img-responsive" src="./assets/images/portfolio-5.jpg" alt="portfolio icon">
+              <div class="card-popup-box">
+                <div>Web Development</div>
+                <h3>The Experience</h3>
+              </div>
+
+            </div>
+          </div>
+          <div class="portfolio-card" data-card="app" data-open="app-3">
             <div class="card-body">
               <img src="./assets/images/portfolio-6.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
-                <div>UI Design</div>
+              <div class="card-popup-box">
+                <div>App Project 3</div>
                 <h3>The Experience</h3>
-              </a>
+              </div>
 
             </div>
           </div>
-          <div class="portfolio-card" data-card="ui">
+          <div class="portfolio-card" data-card="ui" data-open="ui-1">
             <div class="card-body">
               <img src="./assets/images/portfolio-7.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
-                <div>UI Design</div>
+              <div class="card-popup-box">
+                <div>UI Design 1</div>
                 <h3>The Experience</h3>
-              </a>
+              </div>
 
             </div>
           </div>
-          <div class="portfolio-card" data-card="ui">
+          <div class="portfolio-card" data-card="ui" data-open="ui-2">
             <div class="card-body">
               <img src="./assets/images/portfolio-8.jpg" alt="portfolio icon">
-              <a href="#" class="card-popup-box">
-                <div>UI Design</div>
+              <div class="card-popup-box">
+                <div>UI Design 2</div>
                 <h3>The Experience</h3>
-              </a>
+              </div>
 
             </div>
           </div>
         </div>
       </section>
 
+
+      <section class="reviews">
+        <h4 class="review-title"> What People Say</h4>
+        <h2 class="header-md"> Trusted by Clients.</h2>
+        <div class = 'review-cube'>
+          <img src ="./assets/images/cube.png" alt="cube" /> 
+        </div>
+
+        <div class="review-carousel">
+          <div class="review-item active">
+            <div class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta praesentium animi voluptatum quia repudiandae 
+            </div>
+            <div class="review-author">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+              <div class="details">
+                <div class="name">Name</div>
+                <div class="company">Company Info 1</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta praesentium animi voluptatum quia repudiandae 
+            </div>
+            <div class="review-author">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+              <div class="details">
+                <div class="name">Name</div>
+                <div class="company">Company Info 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, soluta praesentium animi voluptatum quia repudiandae 
+            </div>
+            <div class="review-author">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+              <div class="details">
+                <div class="name">Name</div>
+                <div class="company">Company Info 3</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              Elit Lorem ipsum dolor sit amet consectetur adipisicing. Veniam, soluta praesentium animi voluptatum quia repudiandae 
+            </div>
+            <div class="review-author">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+              <div class="details">
+                <div class="name">Name</div>
+                <div class="company">Company Info 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-control-container">
+          <button>
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+
+
 		<!-- Modals-->
 		<!--About Page Modal-->
       <div id="about" class="full-screen-modal page-block " data-animation="zoomInOut" >
-        <header class="modal-header">
-          <h3>ABOUT PAGE</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <img-wrapper>
-            <img src="./assets/images/ava-1.jpg" alt="" />
-          </img-wrapper>
-
-          <h2>Marcus Jones</h2>
-          <p>text 1</p>
-          <p>text 2</p>
-          <div>
-            <div>Email Me:</div>
-            <a href="mailto:energyiskey@protonmail.com"
-              >energyiskey@protonmail.com</a
-            >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>ABOUT PAGE</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <img-wrapper>
+              <img src="./assets/images/ava-1.jpg" alt="" />
+            </img-wrapper>
+  
+            <h2>Marcus Jones</h2>
+            <p>text 1</p>
+            <p>text 2</p>
+            <div>
+              <div>Email Me:</div>
+              <a href="mailto:energyiskey@protonmail.com"
+                >energyiskey@protonmail.com</a
+              >
+            </div>
           </div>
         </div>
       </div>
 
       <!--Contact Page Modal-->
       <div id="contact" class="full-screen-modal page-block " data-animation="zoomInOut" >
-        <header class="modal-header">
-          <h3>Contact Page</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <img-wrapper>
-            <img src="./assets/images/ava-1.jpg" alt="" />
-          </img-wrapper>
-
-          <h2>Marcus Jones</h2>
-          <p>text 1</p>
-          <p>text 2</p>
-          <div>
-            <div>Email Me:</div>
-            <a href="mailto:energyiskey@protonmail.com"
-              >energyiskey@protonmail.com</a
-            >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>Contact Page</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <img-wrapper>
+              <img src="./assets/images/ava-1.jpg" alt="" />
+            </img-wrapper>
+  
+            <h2>Marcus Jones</h2>
+            <p>text 1</p>
+            <p>text 2</p>
+            <div>
+              <div>Email Me:</div>
+              <a href="mailto:energyiskey@protonmail.com"
+                >energyiskey@protonmail.com</a
+              >
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Popup Modal -->
+      <!-- Popup Modals -->
 
-      <div class="modal">
-        <header class="modal-header">
-          <h3>Web Project 1</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <img class="img-wrapper" src="./assets/images/portfolio-1.jpg" alt="portfolio image">
-          <div class="text-wrapper">
-            <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <div id="web-1" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>Web Project 1</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-1.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
           </div>
         </div>
       </div>
+        <div id="web-2" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>Web Project 2</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-2.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="web-3" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>Web Project 3</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-3.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="app-1" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>App Project 1</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-3.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="app-2" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>App Project 2</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-5.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="app-3" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>App Project 3</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-6.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div id="ui-1" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>UI Project 1</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-7.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div id="ui-2" class="modal" data-animation="slideInOutTop">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>UI Project 2</h3>
+              <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+              <img class="img-wrapper" src="./assets/images/portfolio-8.jpg" alt="portfolio image">
+              <div class="text-wrapper">
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
   </main>
 
   </body>

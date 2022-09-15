@@ -31,6 +31,18 @@ const portfolioCards = document.querySelectorAll(portfolioData)
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
+
+
+
+//Modal class
+
+
+
+
+
+
+
+
 const setActive = (elm, selector) => {
     if (document.querySelector(`${selector}.${active}`) !== null) {
         document.querySelector(`${selector}.${active}`).classList.remove(active);
@@ -124,8 +136,26 @@ for (const elm of closeModal) {
     elm.addEventListener('click', function () {
         if ('click') {
             console.log('closing')
-            this.parentElement.parentElement.classList.remove(isVisible)
+            this.parentElement.parentElement.parentElement.classList.remove(isVisible)
         }
         const modalId = this.dataset.close;
     })
 }
+
+
+//Modal
+document.addEventListener('click', (e) => {
+        // console.log(e.target, document.querySelector('.modal.is-visible'));
+    if (e.target === document.querySelector('.modal.is-visible')){
+        document.querySelector('.modal.is-visible').classList.remove(isVisible);
+    }
+})
+
+document.addEventListener('keyup', (e) => {
+//    allows you to see key strokes to capture escape button
+    // console.log(e.key)
+    // console.log(e.key, document.querySelector('.modal.is-visible'));
+    if (e.key === 'Escape'){
+        document.querySelector('.modal.is-visible').classList.remove(isVisible);
+    }
+})
