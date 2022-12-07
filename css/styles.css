@@ -307,7 +307,7 @@ border-radius: 50rem;
     transition: all 0.35s ease-in;
     visibility: hidden;
     opacity: 0;
-    z-index: 100;
+    z-index: 90;
 }
 
 .modal-dialog{
@@ -421,7 +421,7 @@ border-radius: 50rem;
     height: 240px;
     margin-bottom: 20px;
     padding: 0rem;
-    margin: 200px 0 190px;
+    margin: 200px 0 100px;
     pointer-events:none;
     position: relative;
     background: none;
@@ -491,7 +491,8 @@ border-radius: 50rem;
     opacity: 1;
 }
 .slide-control-container button:nth-child(1){padding-right: 10px;}
-.slide-control-container button:nth-child(1){padding-left: 10px;}
+.slide-control-container button:nth-child(2){padding-left: 10px;}
+
 
 
 
@@ -501,7 +502,7 @@ border-radius: 50rem;
 
 /* Animations */
 [data-animation="zoomInOut"].full-screen-modal{
-    transform: scale(.2)
+    transform: scale(1)
 }
 
 [data-animation="slideInOutTop"] .modal-dialog {

@@ -159,3 +159,26 @@ document.addEventListener('keyup', (e) => {
         document.querySelector('.modal.is-visible').classList.remove(isVisible);
     }
 })
+
+
+
+const elementsDisplayed =  getComputedStyle(root).getPropertyValue('--marquee-elements-displayed')
+const marqueeContent = document.querySelector('ul.marquee-content');
+
+root.style.setProperty('--marquee-elements', marqueeContent.children.length);
+
+for (let i = 0; i < elementsDisplayed; i += 1){
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+// const elementsDisplay = getComputedStyle(root).getPropertyValue('--marquee-elements-displayed');
+// const marqueeContent = document.querySelector('ul.marquee-content');
+
+// root.style.setProperty('--marquee-elements', marqueeContent.children.length);
+// // get elements displayed
+// // nodelist.length
+// // assign --marquee-elements
+
+// for (let i = 0; i < elementsDisplay; i += 1){
+//     //creates a clone of the child node including it's children.
+//     marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true``))
+// }
