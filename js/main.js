@@ -31,7 +31,6 @@ const portfolioCards = document.querySelectorAll(portfolioData)
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
-//Modal class
 
 const setActive = (elm, selector) => {
     if (document.querySelector(`${selector}.${active}`) !== null) {
