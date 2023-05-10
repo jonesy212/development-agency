@@ -504,7 +504,7 @@ border-radius: 50rem;
     transform: scale(.2)
 }
 
-[data-animation="zoomInOut"].full-screen-modal.is-visible{
+[data-animation="zoomInOut"].is-visible.full-screen-modal {
         transform: none;
 }
 
@@ -518,11 +518,11 @@ border-radius: 50rem;
     transition-delay: 0.2s;
 }
 
-[data-animation="slideInOutTop"].is-visible .modal-dialog{
+[data-animation="slideInOutTop"].is-visible .modal-dialog {
     transform: translateY(40%);
 }
 
-[data-animation="zoomInOut"].full-screen-modal.is-visible
 [data-animation="slideInOutTop"].is-visible .modal-dialog {
     transform: none;
+
 }
