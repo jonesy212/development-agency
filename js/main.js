@@ -17,6 +17,8 @@ const portfolioData = '[data-card]'
 //store selector
 const root = document.documentElement;
 
+
+
 // Theme
 const toggleTheme = document.querySelector(themeTab);
 const switcher = document.querySelectorAll(switcherBtn);
