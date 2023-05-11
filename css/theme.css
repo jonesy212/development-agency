@@ -26,9 +26,10 @@
     --bg-panel: #f1f1f1f1;
     --color-headings: #fff;
     --color-text-opacity: rgba(255,255, 255, 0.7);
+    --active-btn: rgba(255,255, 255);
     --color-text: #fff;
     --color-text-base: #161c2d;
     --link-text-color: #495fef;
     --selected-background: #fff;
-    --selected-text-color: #495fef;
+    --selected-text-color: #384ab9;
 }

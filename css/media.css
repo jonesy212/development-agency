@@ -1,28 +1,56 @@
 @media only screen and (max-width: 727px) {
+  h2 {
+    font-size: medium;
+  }
 
-    h2{
-        font-size: medium;
-    }
+  .main-menu .nav-item {
+    font-size: 1.1rem;
+  }
 
-   .main-menu .nav-item {
-        font-size: 1.1rem
-        
-    }    
+  .hero-content {
+    padding: 6rem;
+  }
 
-    
-    .hero-content{
-        padding: 6rem
-    }
+  .modal-body.contact,
+  .modal-body.about {
+    flex-direction: column;
+  }
 
+  .modal img-wrapper {
+    border-radius: 0.2rem;
+  }
 
-    .modal-body.contact,
-    .modal-body.about
-    {
-        flex-direction: column
-    }
+  form{
+    width: 76%;
+  }
+  textarea{
+    width: 99%;
+    height: 7rem;
+  }
+  /* Email */
+  .email-me input,
+  .email-me textarea {
+    width: 100%;
+  }
+}
 
-    .modal img-wrapper{
-        border-radius: .2rem
-    }
+@media only screen and (max-width: 768px) {
+  .email-me input,
+  .email-me textarea {
+    width: 100%;
+  }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .email-me input,
+  .email-me textarea {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1123px) {
+  .email-me input,
+  .email-me textarea {
+    width: 60%;
+  }
 }

@@ -244,12 +244,15 @@ avatar
           </header>
           <div class="modal-body about">
             <div class="img-wrapper"  >
-              <img src="./assets/images/ava-1.jpg" alt="" />
+              <img src="./assets/images/profile_ai_image.jpg" alt="" />
             </div>
   
             <h2>Marcus Jones</h2>
-            <p>Hi, my name is Marcus Jones and I am a professional web developer with over 10 years of experience. My passion for building websites and web applications has driven me to deliver exceptional results for my clients.</p>
-            <p>With a focus on creating solutions that shape the brand my clients deserve, I take pride in providing the same care to my clients as their customers should experience.</p>
+            <div class="paragraph-container">
+
+              <p>Hi, my name is Marcus Jones and I am a professional web developer with over 10 years of experience. My passion for building websites and web applications has driven me to deliver exceptional results for my clients.</p>
+              <p>With a focus on creating solutions that shape the brand my clients deserve, I take pride in providing the same care to my clients as their customers should experience.</p>
+            </div>
       
           </div>
         <!-- </div> -->
@@ -262,27 +265,42 @@ avatar
             <i class="fas fa-times" data-close></i>
           </header>
           <div class="modal-body contact">
+
             <div class="img-wrapper" >
-              <img src="./assets/images/ava-1.jpg" alt="" />
+              <img class='contact-img' alt="" />
             </div>
-  
-            <h2>Marcus Jones</h2>
-            <p>Welcome to my contact page. If you have any questions, comments or just want to say hello, feel free to drop me a line using the details below.</p>
-            <p>I look forward to hearing from you!</p>
-            <div>
-              <div>Email Me:</div>
-              <a href="mailto:energyiskey@protonmail.com"
-                >energyiskey@protonmail.com</a
-              >
+
+            <div class="contact-info-container">
+              <p>Welcome to my contact page. If you have any questions, comments or just want to say hello, feel free to drop me a line using the details below.</p>
+              <p>I look forward to hearing from you!</p>
+
             </div>
             <div id="contact-form-container">
               <h3>Send me a message</h3>
-              <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
+                <form class="form-container" id="contact-form" action="" method="post">
+                <div class="user-msg-container">
+
+                  <div class='name-container'>
+                    <label class=" label-text name" for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="email-content">
+                    <label class="label-text email" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="subject-container">
+                    <label class="label-text subject" for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                  </div>
+                </div>
+
+                <div class="message-container">
+                  <label class="label-text message" for="message">Message: </label>
+                  <textarea id="message" name="message" required maxlength="500" style="overflow: auto;"></textarea>
+                </div>
+                <div class="btn-">
+                  <button class="submit-btn" type="submit">Send</button>
+                </div>
               </form>
             </div>
           </div>
