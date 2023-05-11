@@ -1,0 +1,28 @@
+@media only screen and (max-width: 727px) {
+
+    h2{
+        font-size: medium;
+    }
+
+   .main-menu .nav-item {
+        font-size: 1.1rem
+        
+    }    
+
+    
+    .hero-content{
+        padding: 6rem
+    }
+
+
+    .modal-body.contact,
+    .modal-body.about
+    {
+        flex-direction: column
+    }
+
+    .modal img-wrapper{
+        border-radius: .2rem
+    }
+
+}
